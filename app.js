@@ -1,5 +1,4 @@
 const express = require('express')
-const debug = require('debug')('app')
 const app = express()
 const port = 3000
 
@@ -8,5 +7,5 @@ app.get("/" ,(request ,response) => {
 })
 
 app.listen(port ,() => {
-    debug("listening on port " + port);
+    console.log("listening on port " + port);
 })
